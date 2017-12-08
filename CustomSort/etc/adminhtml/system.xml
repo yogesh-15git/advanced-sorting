@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="catalog">
+            <group id="custom_sort" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Advanced Sorting</label>
+                <field id="sort_list" translate="label" type="multiselect" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Slect Sorting Types</label>
+                    <source_model>Distinctive\CustomSort\Model\Config\Source\SortList</source_model>
+                </field>
+                <field id="default_sort" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Slect Default Sort option</label>
+                    <source_model>Distinctive\CustomSort\Model\Config\Source\SortList</source_model>
+                    <comment>Default (Position) Sorting will be used as default option if none selected.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

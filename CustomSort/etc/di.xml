@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Catalog\Block\Product\ProductList\Toolbar" type="Distinctive\CustomSort\Block\Product\ProductList\Toolbar"/>
+    <preference for="Magento\Catalog\Model\Config" type="Distinctive\CustomSort\Model\Config"/>
+</config>
